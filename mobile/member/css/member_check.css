@@ -1,0 +1,108 @@
+header{
+    margin: 50px 0;
+}
+header h1{
+    text-align: center;
+}
+header h1 a{
+    text-indent: -9999px;
+    width: 165px;
+    height: 39px;
+    background: url(../../common/image/logoblackx2.png) no-repeat center/cover;
+    display: inline-block;
+}
+/* 헤더 영역 끝 */
+
+/* 콘텐츠 영역 */
+body{
+    background-color: #f8f8f8;
+}
+#content .sub_cont_wrap{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 90%;
+    padding: 10%;
+    margin: 0 auto 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.2);
+}
+#content .sub_cont_wrap h2{
+    text-align: center;
+    font-size: 2em;
+}
+#content .sub_cont_wrap h2 span{
+    display: block;
+    color: #999;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+#content .sub_cont_wrap form > ul > li{
+    margin-top: 30px;
+}
+#content .sub_cont_wrap form > ul > li h3{
+    font-size: 1.6em;
+}
+#content .sub_cont_wrap form > ul > li .policy{
+    font-size: 1em;
+    height: 150px;
+    overflow-y: scroll;
+    border: solid 1px #ccc;
+    margin: 20px 0;
+    padding: 10px 20px 10px 10px;
+    box-sizing: border-box;
+}
+#content .sub_cont_wrap form > ul > li .policy dt{
+    font-size: 1rem;
+    font-weight: 700;
+}
+#content .sub_cont_wrap form > ul > li .policy dd{
+    padding-left: 20px;
+}
+#content .sub_cont_wrap form > ul > li .check input{
+    display: none;
+}
+#content .sub_cont_wrap form > ul > li .check label{
+    color: #2e90e4;
+    font-size: 1.2em;
+    padding-left: 30px;
+    position: relative;
+}
+#content .sub_cont_wrap form > ul > li .check label::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    background: url(../images/check.jpg) no-repeat center/cover;
+}
+#content .sub_cont_wrap form > ul > li .check input:checked +  label::before{
+    background: url(../images/checked.jpg) no-repeat center/cover;
+}
+#content .sub_cont_wrap form .button{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 50px;
+}
+#content .sub_cont_wrap form .button a{
+    background-color: rgb(10,72,155);
+    color: #f8f8f8;
+    width: 33%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+#content .sub_cont_wrap form .button button{
+    width: 33%;
+    color: #f8f8f8;
+    border: none;
+    background-color: rgb(10,72,155);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}

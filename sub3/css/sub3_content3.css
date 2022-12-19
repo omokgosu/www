@@ -1,0 +1,86 @@
+#content .contentArea h3{
+    font: 700 4em 'Noto Sans KR', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 200px 0 200px 0;
+    opacity: 0;
+}
+#content .contentArea h3.off.onslide{
+    opacity: 1;
+    margin-top: 100px;
+    transition: all 1s;
+}
+#content .contentArea h3 span{
+    color: rgb(10, 72, 155);
+}
+#content .contentArea ul li{
+    position: relative;
+    margin-bottom: 200px;
+}
+#content .contentArea ul li::before{
+    content: '';
+    width: 2000px;
+    height: 400px;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 50%;
+    margin-left: -1000px;
+    top: 0;
+    z-index: -1;
+}
+#content .contentArea ul li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .contentArea ul li img{
+    float: left;
+    position: relative;
+    top: -70px;
+    left: -100px;
+    opacity: 0;
+}
+#content .contentArea ul li.off.onslide img{
+    opacity: 1;
+    left: 0;
+    transition: all 1s;
+}
+#content .contentArea ul li dl{
+    width: 470px;
+    float: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    margin-right: 70px;
+    padding-top: 60px;
+    position: relative;
+    left: 100px;
+    opacity: 0;
+}
+#content .contentArea ul li.off.onslide dl{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea ul li dl dt{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+#content .contentArea ul li dl dd{
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #666;
+    text-align: justify;
+    line-height: 2em;
+}
+#content .contentArea ul li:nth-child(2) dl{
+    float: left;
+    left: -100px;
+}
+#content .contentArea ul li:nth-child(2) img{
+    float: right;
+    left: 100px;
+}
+#content .contentArea ul li:last-child{
+    margin-bottom: 100px;
+}

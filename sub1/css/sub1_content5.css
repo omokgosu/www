@@ -1,0 +1,100 @@
+#content .contentArea{
+    margin-bottom: 100px;
+}
+#content .contentArea > ul{
+    overfloW: hidden;
+    width: 900px;
+    margin: 150px auto;
+    opacity: 0;
+}
+#content .contentArea > ul.off.onslide{
+    margin-top: 50px;
+    opacity: 1;
+    transition:  all 1s;
+}
+#content .contentArea > ul li{
+    float: left;
+}
+#content .contentArea > ul li a{
+    display: block;
+    width: 300px;
+    padding: 25px 0;
+    font: 700 2em 'Noto Sans KR', sans-serif;
+    color: #999;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s;
+}
+#content .contentArea > ul li.current a{
+    border: solid 1px rgb(10,72,155);
+    color: rgb(10,72,155);
+}
+#content .contentArea > ul li a:hover{
+    color: rgb(10,72,155);
+    border: solid 1px rgb(10,72,155);
+}
+#content .contentArea #samchully,
+#content .contentArea #samchully2,
+#content .contentArea #samchully3{
+    width: 100%;
+    height: 450px;
+}
+#content .contentArea > section ul li:first-child{
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    border-bottom: solid 1px #ccc;
+}
+#content > div ul dl{
+    overflow: hidden;
+}
+#content > div ul dt{
+    width: 420px;
+    height: 120px;
+    font: 700 2.4em 'Noto Sans KR', sans-serif;
+    color: #333;
+    float: left;
+}
+#content > div ul dt span{
+    display: block;
+    font: 500 20px 'Noto Sans KR', sans-serif;
+    margin-top: 30px;
+    color: #666;
+}
+#content > div ul dd{
+    font: 500 1.8em 'Noto Sans KR', sans-serif;
+    color: #666;
+    margin-bottom: 30px;
+}
+#content > div ul dd:last-child{
+    margin-bottom: 0;
+}
+#content > div ul dd span{
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+    color: #333;
+}
+#content .contentArea div[id*="samchully"]{
+    margin: 100px 0;
+    opacity: 0;
+}
+#content .contentArea div[id*="samchully"].off.onslide{
+    margin-top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea section{
+    display: none;
+    position: relative;
+}
+#content .contentArea section ul.off{
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea section ul.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}

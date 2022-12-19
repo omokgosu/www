@@ -1,0 +1,45 @@
+/* main visual 공통 영역*/
+.main h3{
+    font-size: 2em;
+    color: #f8f8f8;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.subNav{
+    border-bottom: solid 1px #ccc;
+}
+.subNav ul{
+    width: 100%;
+}
+.subNav ul:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.subNav ul li{
+    float: left;
+    text-align: center;
+    border-right: solid 1px #ccc;
+    box-sizing: border-box;
+}
+.subNav ul li[class="current"]{
+    position: relative;
+    font-weight: 700;
+}
+.subNav ul li.current::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.subNav ul li a{
+    padding: 6px 0;
+}
+.subNav ul li .current{
+    color: rgb(10,72,155);
+}

@@ -1,0 +1,170 @@
+@font-face{
+    font-family:"Thunderbolt";
+    src : url(../images/ThunderboltRegular-8MV8M.ttf);
+}
+/*
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Roboto Slab', serif;
+*/
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+html{font-size: 18px}
+body {font-family:'Nanum Myeongjo', serif; font-size:18px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; display: block;}
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+/* 와이드 pc */
+/* 헤더 공통 영역 */
+#wrap{
+    width:100%;
+    overflow: hidden
+}
+#headerArea{
+    position:fixed;
+    z-index: 30;
+    left:0;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+}
+#headerArea	.headerInner{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerArea h1 a{
+    width: 320px;
+    height: 60px;
+    background: url(../images/Arcane_Logo.png) no-repeat center center;
+    text-indent: -9999px;
+    padding: 20px 0;
+}	
+#headerArea #gnb{
+    float: right;
+}
+#headerArea #gnb ul{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+#headerArea #gnb ul li{
+    position: relative;
+}
+#headerArea #gnb ul li a{
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(154,111,83,1) 0%, rgba(179,143,105,1) 50%, rgba(198,159,122,1) 100%);
+    font-family: 'Roboto Slab', serif;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.6em;
+    padding: 15px;
+    transition: all .5s;
+}
+#headerArea #gnb ul li a:hover{
+    color: #f8f8f8;
+    text-shadow: 4px 2px 3px black;
+}
+/* 푸터 공통 영역 */
+#footerArea{
+    position: relative;
+    text-align: center;
+    background-color: #111;
+    padding: 80px 0 60px 0;
+}
+#footerArea p{
+    color: #f8f8f8;
+    font-family: 'Roboto Slab', serif;
+}
+#footerArea p:nth-of-type(1){
+    margin: 30px 0 40px 0;
+}
+#footerArea .topMove{
+    width: 95px;
+    height: 94px;
+    position: absolute;
+    top: -47px;
+    left: 50%;
+    margin-left: -48px;
+    background: url(../images/shurima.png) no-repeat center center;
+    transform: rotateZ(180deg);
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #headerArea h1 a{
+        width: 200px;
+        background: url(../images/Arcane_Logo.png) no-repeat center/100%;
+    }
+	#headerArea #gnb{
+        position: absolute;
+        right: -100vw;
+        top: 100px;
+        width: 100vw;
+        background-color: rgb(0,0,0,.6);
+        text-align: end;
+    }
+    #headerArea #gnb ul{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
+    #headerArea #gnb ul li a{
+        padding: 25px 5%;
+    }
+    #headerArea .headerInner .tab_nav span{
+        display: block;
+        width: 40px;
+        height: 6px;
+        background: linear-gradient(180deg, rgba(154,111,83,1) 0%, rgba(179,143,105,1) 50%, rgba(198,159,122,1) 100%);
+        border-radius: 3px;
+        margin-bottom: 4px;
+        transition: all .5s;
+    }
+    #headerArea .headerInner .tab_nav span:last-child{
+        margin-bottom: 0;
+    }
+    #headerArea .headerInner .tab_nav.on span:first-child,
+    #headerArea .headerInner .tab_nav.on span:last-child{
+        display: none;
+    }
+    #headerArea .headerInner .tab_nav.on span{
+        transform: rotateZ(-45deg) translateY(-7px);
+    }
+    #headerArea .headerInner .tab_nav.on span:nth-of-type(2){
+        transform: rotateZ(45deg) translateY(7px);
+    }
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

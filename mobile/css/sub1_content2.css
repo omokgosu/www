@@ -1,0 +1,39 @@
+/* subNav 영역 */
+.subNav ul li{
+    width: 25%;
+}
+/* 본문 콘텐츠 영역 */
+#content{
+    text-align: center;
+}
+#content img{
+    width: 80%;
+    margin-top: 50px;
+}
+#content >p{
+    color: rgb(10, 72, 155);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+#content div{
+    padding: 20px 8%;
+    background-color: #f8f8f8;
+}
+#content div p{
+    font-size: 1.2em;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+#content div span{
+    display: block;
+    font-size: 1em;
+    text-align: end;
+}
+#content div span strong{
+    font-size: 1.3em;
+    color: #333;
+    display: inline-block;
+    margin-left: 10px;
+}

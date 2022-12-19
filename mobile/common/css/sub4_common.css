@@ -1,0 +1,6 @@
+.main{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background: url(../../images/sub4/main-visual.jpg) no-repeat 0/cover;
+}

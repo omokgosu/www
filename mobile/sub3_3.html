@@ -1,0 +1,145 @@
+<? 
+	session_start(); 
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./common/css/sub_common.css">
+<link rel="stylesheet" href="./css/sub3_content3.css">
+<link rel="stylesheet" href="./common/css/sub3_common.css">
+<script src="https://kit.fontawesome.com/39dad5f800.js" crossorigin="anonymous"></script>
+<script src="./common/js/prefixfree.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ <title>삼천리 - 인재채용</title>
+</head>
+
+<body>
+    <div id="wrap">
+    <header id="headerArea">
+        <? include "./common/header.html" ?>
+    </header>
+    <div class="main">
+        <h3>인재채용</h3>
+    </div>
+    <div class="subNav">
+        <ul>
+            <li><a href="./sub3_1.html">인재상</a></li>
+            <li><a href="./sub3_2.html">직무소개</a></li>
+            <li class="current"><a href="./sub3_3.html" class="current">복리후생</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <h2>복리후생</h2>
+        <div class="swiper mySwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                    <p>일하는 장소부터 행복해야 합니다.<strong>'사내지원'</strong></p>
+                    <span>당신이 행복할 수 있게 공간부터 만들어 드리겠습니다.</span>
+                    <dl>
+                        <dt>사내식당 지원</dt>
+                        <dd>사내식당에서 중식을 무료로 제공합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>장기근속자 포상</dt>
+                        <dd>현금 및 휴가 포상을 실시하고 있습니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>금연캠페인</dt>
+                        <dd>현금 100만원을 지급합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>건강계단</dt>
+                        <dd>사옥 내 'Together way'조성</dd>
+                    </dl>
+              </li>
+              <li class="swiper-slide">
+                <p>일을 하는 이유는 가정을 위해<strong>'워라밸 지원'</strong></p>
+                    <span>가정을 위해 일하는 당신을 위해 준비했습니다. </span>
+                    <dl>
+                        <dt>패밀리 데이</dt>
+                        <dd>가족과의 시간을 위한 17시 조기 퇴근</dd>
+                    </dl>
+                    <dl>
+                        <dt>역사문화 탐방</dt>
+                        <dd>자녀와 함께 하는 유적답사 </dd>
+                    </dl>
+                    <dl>
+                        <dt>쿠킹 클래스</dt>
+                        <dd>가족과 함께 맛있는 추억을 만들어 보세요.</dd>
+                    </dl>
+                    <dl>
+                        <dt>문화 프로그램</dt>
+                        <dd>가족을 위한 문화프로그램을 제공합니다.</dd>
+                    </dl>
+              </li>
+              <li class="swiper-slide">
+                <p>쉴 때는 확실하게 쉬어야 합니다.<strong>'여가지원'</strong></p>
+                <span>정말 행복하게 휴식할 수 있도록 도와드리겠습니다.</span>
+                <dl>
+                    <dt>휴가제도</dt>
+                    <dd>매년 7월 중 하계 휴가비가 지급됩니다.</dd>
+                </dl>
+                <dl>
+                    <dt>휴양시설 운영</dt>
+                    <dd>휴양시설을 자유롭게 이용할 수 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>동호회 지원</dt>
+                    <dd>동호회에 적극적인 지원을 하고 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>복지포인트</dt>
+                    <dd>복지포인트를 자유롭게 사용하실 수 있습니다.</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <p>안정된 생활을 위한 더욱 큰 노력<strong>'생활지원'</strong></p>
+                    <span>당신의 생활안정을 위해 삼천리는 늘 생각하고 있습니다.</span>
+                    <dl>
+                        <dt>학자금 지원</dt>
+                        <dd>자녀 등록금(3인)을 전액 지원합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>주택자금 대부</dt>
+                        <dd>주택구입자금을 대출로 지원합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>경조금 지급</dt>
+                        <dd>경조비와 화환을 지급합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>의료비 지원</dt>
+                        <dd>자녀의 의료비 일부를 지원하고 있습니다.</dd>
+                    </dl>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <img src="./images/sub3/back.jpg" alt="">
+    </article>
+    <footer id="footerArea"></footer>
+  </div>
+ 
+ <script src="./common/js/jquery-1.12.4.min.js"></script>
+ <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./common/js/common.js"></script>
+ <script src="./js/sub3_content3.js"></script>
+</body>
+</html>

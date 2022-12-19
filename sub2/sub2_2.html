@@ -1,0 +1,109 @@
+<? session_start(); ?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content2.css">
+    <script src="https://kit.fontawesome.com/39dad5f800.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <title>삼천리 - 사업소개</title>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+    <? include "./common/sub2_main.html" ?>
+    <div class="subNav">
+        <ul>
+            <li><a href="./sub2_1.html">도시가스</a></li>
+            <li  class="current"><a  class="current" href="./sub2_2.html">발전사업</a></li>
+            <li><a href="./sub2_3.html">집단에너지</a></li>
+            <li><a href="./sub2_4.html">R & D</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span>home</span> &gt; <span>사업소개</span> &gt; <strong>발전사업</strong>
+            </div>
+            <h2 class="off">발전사업</h2>
+            <p class="off">전기를 생산하고 전력시장을 통하여 전기판매사업자에게</p>
+            <p class="off">공급하는 것을 주된 목적으로 하는 사업입니다.</p>
+        </div>
+        <!-- 본문 콘텐츠 영역 -->
+        <div class="contentArea">
+            <div class="sub2_visual off">
+                <img src="./images/content2/main-visual.jpg" alt="">
+            </div>
+            <ol class="off">
+                <li>
+                    <span>01</span>발전
+                    <div class="circle1"></div>
+                </li>
+                <li>
+                    <span>02</span>송전
+                    <div class="circle2"></div>
+                </li>
+                <li>
+                    <span>03</span>변전
+                    <div class="circle3"></div>
+                </li>
+                <li>
+                    <span>04</span>배전
+                    <div class="circle4"></div>
+                </li>
+                <li>
+                    <span>05</span>판매
+                    <div class="circle5"></div>
+                </li>
+            </ol>
+            <section class="dev">
+                <h3 class="off">발전</h3>
+                <ul class="off">
+                    <li>
+                        <img src="./images/content2/develop_1.jpg" alt="">
+                        <p>1. 원자력 발전소</p>
+                    </li>
+                    <li>
+                        <img src="./images/content2/develop_2.jpg" alt="">
+                        <p>2. 화력 발전소</p>
+                    </li>
+                    <li>
+                        <img src="./images/content2/develop_3.jpg" alt="">
+                        <p>3. 수력 발전소</p>
+                    </li>
+                </ul>
+                <p>다양한 에너지 자원을 전기 에너지로 변환</p>
+            </section>
+            <ol class="off">
+                <li>
+                     <h3>송전</h3>
+                     <p>발전소에서 생산된 전력을 운용</p>
+                     <img src="./images/content2/trans.jpg" alt="">
+                </li>
+                <li>
+                    <h3>변전</h3>
+                    <p>소비자 환경에 맞게 전압 조정</p>
+                    <img src="./images/content2/substation.jpg" alt="">
+               </li>
+               <li>
+                    <h3>배전</h3>
+                    <p>소비자에게 전력 공급</p>
+                    <img src="./images/content2/distribution.jpg" alt="">
+                </li>
+            </ol>
+            <section class="sold off">
+                <h3>판매</h3>
+                <p>주택, 도시, 공장 등 다양한 곳에 전력을 판매하고 있습니다.</p>               
+            </section>
+        </div>
+        </article>
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/circle-progress.js"></script>
+        <script src="./js/sub2_content2.js"></script>
+</body>
+</html>
