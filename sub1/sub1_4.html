@@ -1,0 +1,94 @@
+<? session_start(); ?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개 - CI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+    <script src="https://kit.fontawesome.com/39dad5f800.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+    <? include "./common/sub_main.html" ?>
+        <div class="subNav">
+            <ul>
+                <li><a href="./sub1_1.html">그룹소개</a></li>
+                <li><a href="./sub1_2.html">인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li  class="current"><a href="./sub1_4.html"  class="current">C I</a></li>
+                <li><a href="./sub1_5.html">찾아오시는길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span>home</span> &gt; <span>회사소개</span> &gt; <strong>CI</strong>
+                </div>
+                <h2 class="off">CI</h2>
+                <p class="off">삼천리의 심볼은 회전하는 지구를 형상화한 것 입니다.</p>
+                <p class="off">세계 속으로 뻗어나가려는 조직 구성원들의 진취성과 미래 지향적인 도전의식을 담고 있습니다.</p>
+            </div>
+            <!-- 본문 콘텐츠 영역 -->
+            <div class="contentArea">
+                <div class="symbol off">
+                    <h3>심볼마크</h3>
+                    <img src="./images/content4/symbol_blue.png" alt="삼천리 심볼마크">
+                    <p>청색, 백색 부분의 결합은 두 창업자의 동업정신을 상징한 것입니다.</p>
+                    <p>환경과 에너지 두 가지를 모두 생각하는 삼천리의 ESG 경영이 담겨 있습니다.</p>
+                </div>
+                <div class="tabMenu">
+                    <ul class="off">
+                        <li>
+                            <a class="click1" href="#">그리드 시스템</a>
+                        </li>
+                        <li>
+                            <a class="click2" href="#">색상 규정</a>
+                        </li>
+                    </ul>
+                    <div id="grid" class="off">
+                        <h3 class="hidden">그리드 시스템</h3>
+                        <p>그리드 시스템은 빌보드나 대형 사인 제작시 사용하는 요소입니다.</p>
+                        <p>심볼마크의 변형을 방지하기 위해서 본항의 규정에 따라 정비례로 확대, 축소하여 사용합니다.</p>
+                    </div>
+                    <div id="symbolColor" class="off">
+                            <h3 class="hidden">색상 규정</h3>
+                        <div>
+                            <p>심볼마크의 색상은 PANTONE 3005C로만 사용하여야 합니다.</p>
+                            <ul>
+                                <li>
+                                    <img src="./images/content4/symbol_gold.png" alt="삼천리 심볼마크 골드">
+                                </li>
+                                <li>
+                                    <img src="./images/content4/symbol_gray.png" alt="삼천리 심볼마크 회색">
+                                </li>
+                            </ul>
+                            <p>원래의 심볼마크 칼라를 효과적으로 표현하기 어려울 때는 제시된 2가지 변용색상을 활용할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <img class="off" src="./images/content4/symbol_blue.png" alt="삼천리 로고">
+                </div>
+                <h3 class="off">시그니쳐</h3>
+                <p class="off">삼천리를 나타내는 공식 표기에는 심볼마크와 로고를 일정 규정에 준하여 조합 활용하는 것이 원칙이며<br>이와 같이 규정에 의하여 조합된 심볼마크와 로고를 시그니쳐라고 합니다.</p>
+                <ul>
+                    <li class="high off">
+                        <img src="./images/content4/high_en.png" alt="삼천리 영문 상하조합">
+                        <img src="./images/content4/high_ko.png" alt="삼천리 한글 상하조합">
+                    </li>
+                    <li class="side off">
+                        <img src="./images/content4/side_en.jpg" alt="삼천리 영문 좌우조합">
+                        <img src="./images/content4/side_ko.png" alt="삼천리 한글 좌우조합">
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/sub1_content4.js"></script>
+</body>
+</html>

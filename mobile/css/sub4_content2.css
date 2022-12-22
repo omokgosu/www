@@ -1,0 +1,53 @@
+/* subNav 영역 */
+.subNav ul li{
+    width: 50%;
+}
+/* 본문 콘텐츠 영역 */
+#content{
+    position: relative;
+    margin-bottom: 50px;
+}
+#content h2{
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    margin: 50px 0 30px 0;
+}
+#content ul li{
+    padding: 0 5%;
+}
+#content ul li a{
+    font-size: 1.2em;
+    color: #333;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px;
+    border-bottom: solid 1px #ccc;
+}
+#content ul li:first-child a{
+    border-top: solid 2px #333;
+}
+#content ul li a::before{
+    content: 'Q';
+    color: rgb(10,72,155);
+    position: absolute;
+    left:0;
+    top: 50%;
+    margin-top: -12px;
+}
+#content ul li p{
+    text-align: justify;
+    color: #666;
+    background-color: #f8f8f8;
+    padding: 5%;
+    display: none;
+}
+#content .all{
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}

@@ -1,0 +1,90 @@
+/* subNav 영역 */
+.subNav ul li{
+    width: 25%;
+}
+/* 본문 콘텐츠 영역 */
+#content h3{
+    font-size: 2em;
+    color: #333;
+    padding-left: 5%;
+    position: relative;
+    font-weight: 700;
+}
+#content h3::after{
+    content: '01';
+    position: absolute;
+    left: 0;
+    top: -70%;
+    color: rgba(0,0,0,.1);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+#content .dev{
+    margin: 50px 0;
+    padding: 0 5%;
+}
+#content .dev ul{
+    display: flex;
+    margin: 20px 0;
+}
+#content .dev li{
+    width: 33%;
+    position: relative;
+}
+#content .dev li img{
+    width: 100%;
+    border-radius: 50%;
+}
+#content .dev li p{
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    color: #f8f8f8;
+    background-color: rgba(0,0,0,.3);
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content .dev > p{
+    text-align: center;
+    color: #666;
+    font-size: 1.4em;
+}
+#content ol{
+    display: flex;
+    justify-content: space-between;
+}
+#content ol li{
+    width: 30%;
+}
+#content ol li p{
+    color: #666;
+    font-size: 1em;
+    margin: 5px 0;
+}
+#content ol li img{
+    width: 100%;
+}
+#content .sold{
+    position: relative;
+    margin: 70px 0 50px 0;
+}
+#content .sold img{
+    width: 100%;
+}
+#content .sold p{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    color: #f8f8f8;
+    text-align: center;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding:0 5%;
+}

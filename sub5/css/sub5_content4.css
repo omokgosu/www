@@ -1,0 +1,45 @@
+#content .contentArea h3{
+    font: 700 4em 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+#content .contentArea p{
+    font: 500 2em/1.6em 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+#content .contentArea .research{
+    margin-top: 100px;
+}
+#content .contentArea .research h3{
+    margin-bottom: 45px;
+}
+#content .contentArea .research ul{
+    margin: 100px 0;
+}
+#content .contentArea .research li{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+#content .contentArea .research li:last-child{
+    margin-bottom: 0;
+}
+#content .contentArea .research h4{
+    font: 700 2.6em 'Noto Sans KR', sans-serif;
+    float: left;
+}
+#content .contentArea .research div{
+    float: right;
+    width: 820px;
+    text-align: justify;
+}
+#content .contentArea .research div img{
+    margin-right: 16px;
+}
+#content .contentArea .research div img:nth-child(2){
+    margin-right: 0;
+}
+#content .contentArea .research div p{
+    margin-top: 30px;
+}
+#content .contentArea > p{
+    margin: 30px 0 100px 0;
+}

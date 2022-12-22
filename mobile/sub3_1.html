@@ -1,0 +1,76 @@
+<? 
+	session_start(); 
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>삼천리 - 인재채용</title>
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./common/css/sub_common.css">
+<link rel="stylesheet" href="./css/sub3_content1.css">
+<link rel="stylesheet" href="./common/css/sub3_common.css">
+<script src="https://kit.fontawesome.com/39dad5f800.js" crossorigin="anonymous"></script>
+<script src="./common/js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+</head>
+
+<body>
+    <div id="wrap">
+    <header id="headerArea">
+        <? include "./common/header.html" ?>
+    </header>
+    <div class="main">
+        <h3>인재채용</h3>
+    </div>
+    <div class="subNav">
+        <ul>
+            <li class="current"><a href="./sub3_1.html" class="current">인재상</a></li>
+            <li><a href="./sub3_2.html">직무소개</a></li>
+            <li><a href="./sub3_3.html">복리후생</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">인재상</h2>
+        <p>삼천리 人材象<span>'사랑'을 품은 열정인</span></p>
+        <div class="back">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <p>목표를 향해 나아가는<br>실패를 두려워하지 않는 열정인</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>사람에 대한 사랑<br>기업, 이해관계자들에 대한 사랑</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>회사의 미션을 이해하고<br>비전을 실천하는 인재</p>
+                </li>
+            </ul>
+            <div class="backInner"></div>
+         </div>
+    </article>
+    <footer id="footerArea"></footer>
+  </div>
+ 
+ <script src="./common/js/jquery-1.12.4.min.js"></script>
+ <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./common/js/common.js"></script>
+ <script src="./js/sub3_content1.js"></script>
+</body>
+</html>

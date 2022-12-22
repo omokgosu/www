@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&family=Roboto:wght@100;400;500;700&display=swap');
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+body {
+ color:#333;
+ font-size:14px;
+ font-family :'Noto Sans KR', sans-serif;
+ overscroll-behavior: none; }
+img, fieldset { border:0; vertical-align:top }
+html{
+    font-size: 14px;
+}
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; display: block; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+#headerArea{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.6);
+    padding: 0 20px;
+    z-index: 30;
+    transition: all .5s;
+}
+#headerArea.tab{
+    background-color: #fff;
+}
+#headerArea::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#headerArea h1{
+    float: left;
+}
+#headerArea h1 a{
+    display: block;
+    width: 106px;
+    height: 25px;
+    background: url(../image/logowhite.png) no-repeat center center;
+    text-indent: -9999px;
+    padding: 15px 0;
+}
+#headerArea.tab h1 a{
+    background: url(../image/logoblack.png) no-repeat center center;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+    #headerArea h1 a{
+        background: url(../image/logowhitex2.png) no-repeat center/100% 25px;
+    }
+    #headerArea.tab h1 a{
+        background: url(../image/logoblackx2.png) no-repeat center/100% 25px;
+    }
+}
+#headerArea .nav_Tab{
+    float: right;
+    padding: 18px 0;
+}
+#headerArea .nav_Tab span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #f8f8f8;
+    margin-bottom: 5px;
+    transition: all .5s;
+}
+#headerArea .nav_Tab span:last-child{
+    margin-bottom: 0;
+}
+#headerArea.tab .nav_Tab span{
+    background-color: black;
+}
+#headerArea.tab .nav_Tab span:first-child{
+    transform: rotateZ(-45deg) translateY(6px);
+}
+#headerArea.tab .nav_Tab span:last-child{
+    transform: rotateZ(45deg) translateY(-6px)
+}
+#headerArea.tab .nav_Tab span:nth-child(2){
+    display: none;
+}
+#headerArea #gnb{
+    position: absolute;
+    left: 100%;
+    top: 55px;
+    padding: 0 10%;
+    width: 100%;
+    z-index: 40;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 100vh;
+    transition: all .5s;
+}
+#headerArea #gnb .nav_link{
+    margin-top: 20px;
+}
+#headerArea #gnb .nav_link > li{
+    margin-bottom: 15px;
+    position: relative;
+}
+#headerArea #gnb .nav_link > li:last-child{
+    margin-bottom: 0;
+}
+#headerArea #gnb .nav_link li h3{
+    font-size: 1.7em;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+}
+#headerArea #gnb .nav_link li h3.close::after{
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+#headerArea #gnb .nav_link li h3.close::before{
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    right:0%;
+    top: 12px;
+    transform: rotateZ(90deg);
+}
+#headerArea #gnb .nav_link li h3.open::before{
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+#headerArea #gnb .nav_link li ul{
+    display: none;
+    padding: 10px 0;
+}
+#headerArea #gnb .nav_link li ul li h4 a{
+    font-size: 1.4em;
+    color: #666;
+    font-weight: 400;
+    padding: 6px 6%;
+}
+#headerArea #gnb .sns{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    padding: 0 10%;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+#headerArea #gnb .sns a{
+    display: block;
+    padding: 0 10px;
+}
+#headerArea #gnb .login{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#headerArea #gnb .login a{
+    font-weight: 700;
+}
+
+/* 푸터공통 */
+#footerArea a{
+    display: block;
+    color: #c8c8ca;
+    font-size: 0.85em;
+}
+#footerArea{
+    background-color: rgb(10,72,155);
+    padding: 30px 20px;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+#footerArea > img{
+    width: 78px;
+    height: 20px;
+}
+#footerArea > ul{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+#footerArea > ul li{
+    margin-right: 3%;
+}
+#footerArea > ul a{
+    padding: 10px 0;
+}
+#footerArea p{
+    color: #c8c8ca;
+    font-size: 0.85em;
+}
+#footerArea .family{
+    position: relative;
+}
+#footerArea .family a{
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px 0 10px 10px;
+    transition: all .5s;
+}
+#footerArea .family a.up{
+    background-color: #333;
+    color: #f8f8f8;
+}
+#footerArea .family ul{
+    position: absolute;
+    left:0;
+    bottom: 37px;
+    width: 100%;
+    display: none;
+}
+#footerArea .topMove{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(10,72,155);
+    display: block;
+    background: url(../image/topMove.jpg) no-repeat center/cover;
+    border-radius: 50%;
+    display: none;;
+}
+
+
+
+
+

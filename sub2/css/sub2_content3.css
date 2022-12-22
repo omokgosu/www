@@ -1,0 +1,185 @@
+#content .contentArea h3{
+    color: #333;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .contentArea .law{
+    overflow: hidden;
+    margin: 100px 0;
+}
+#content .contentArea .law h3{
+    width: 240px;
+    font-size: 4em;
+    float: left;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .law h3.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .law ul{
+    overflow: hidden;
+}
+#content .contentArea .law ul li{
+    width: 910px;
+    float: right;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .law ul li.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .law ul li:last-child{
+    margin-bottom: 0;
+}
+#content .contentArea .law ul li h4{
+    font: 700 3em 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+#content .contentArea .law ul li h4 span{
+    display: inline-block;
+    margin-right: 35px;
+}
+#content .contentArea .law ul li p{
+    font: 500 2em 'Noto Sans KR', sans-serif;
+    color: #666;
+    padding-left: 80px;
+    margin-top: 10px;
+}
+#content .contentArea .great{
+    position: relative;
+    margin-bottom: 100px;
+}
+#content .contentArea .great > span{
+    position: absolute;
+    display: inline-block;
+    font: 700 3em 'Noto Sans KR', sans-serif;
+    color: #333;
+    width: 300px;
+    line-height: 250px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: -35px;
+    z-index: 10;
+    opacity: 0;
+}
+#content .contentArea .great > span.off.onslide{
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .great .greatTitle{
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .great .greatTitle.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .great .greatTitle h3{
+    font-size: 3em;
+    text-align: center;
+    float: left;
+    margin: 0 180px 0 100px;
+}
+#content .contentArea .great .greatTitle h3 span{
+    display: block;
+}
+#content .contentArea .great .greatTitle p{
+    width: 730px;
+    float: left;
+    font: 500 2.2em 'Noto Sans KR', sans-serif;
+    color: #666;
+    margin-top: 10px;
+}
+#content .contentArea .great ul{
+    margin-top: 100px;
+    overflow: hidden;
+}
+#content .contentArea .great ul li{
+    width: 500px;
+    height: 300px;
+    background-color: #f8f8f8;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    padding: 10px 35px 0 35px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+#content .contentArea .great ul.off.onslide li{
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .great ul.off.onslide li:nth-child(1){
+    transition-delay: .4s;
+}
+#content .contentArea .great ul.off.onslide li:nth-child(2){
+    transition-delay: .6s;
+}
+#content .contentArea .great ul.off.onslide li:nth-child(3){
+    transition-delay: .5s;
+}
+#content .contentArea .great ul.off.onslide li:nth-child(4){
+    transition-delay: .7s;
+}
+#content .contentArea .great ul li:nth-child(2n-1){
+    float: left;
+}
+#content .contentArea .great ul li:nth-child(2n){
+    float: right;
+    text-align: end;
+}
+#content .contentArea .great ul li:nth-child(3),
+#content .contentArea .great ul li:nth-child(4){
+    margin-top: 100px;
+}
+#content .contentArea .great ul li span{
+    font-size: 3em;
+    color: #333;
+    position: relative;
+}
+#content .contentArea .great ul li span::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 27px;
+    background-color: #2d6fc7;
+    top: 8px;
+    left: -15px;
+}
+#content .contentArea .great ul li h4{
+    font-size: 2.4em;
+    color: #666;
+    margin: 25px 0 20px 0;
+}
+#content .contentArea .great ul li p{
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+}
+#content .contentArea .great ul li p:nth-of-type(1){
+    margin-top: 0;
+}
+#content .contentArea .great .circle{
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -50px;
+}
+

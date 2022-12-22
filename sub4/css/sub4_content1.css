@@ -1,0 +1,106 @@
+#content .contentArea .future{
+    margin-top: 100px;
+    overflow: hidden;
+    height: 700px;
+    background: url(../images/content1/social_1.jpg) no-repeat bottom center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .future.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .future p{
+    font: 700 6em 'Roboto', sans-serif;
+    color: #333;
+    padding-left: 150px;
+    float: left;
+}
+#content .contentArea .future p span{
+    display: block;
+}
+#content .contentArea .future p:nth-child(2){
+    font: 500 18px 'Noto Sans KR', sans-serif;
+    color: #666;
+    padding-right: 200px;
+    width: 440px;
+    float: right;
+    margin-top: 80px;
+}
+#content .contentArea .rule{
+    margin: 100px 0;
+}
+#content .contentArea .rule h3{
+    font: 700 4em 'Noto Sans KR', sans-serif;
+    color: #333;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .rule h3.off.onslide{
+    top :0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .rule p{
+    font: 500 1.8em 'Noto Sans KR', sans-serif;
+    color: #666;
+    text-align: center;
+    margin: 30px 0 50px 0;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .rule p.off.onslide{
+    top :0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .rule ul{
+    overflow: hidden;
+    text-align: start;
+}
+#content .contentArea .rule ul li{
+    width: 390px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .contentArea .rule ul.off.onslide li{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .rule ul.off.onslide li:nth-child(2){
+    transition-delay: .2s;
+}
+#content .contentArea .rule ul.off.onslide li:nth-child(3){
+    transition-delay: .4s;
+}
+#content .contentArea .rule ul li:last-child{
+    margin-right: 0;
+}
+#content .contentArea .rule ul dt{
+    font: 400 2.4em 'Noto Sans KR', sans-serif;
+    color: #333;
+    position: relative;
+}
+#content .contentArea .rule ul dt span{
+    color: rgb(10,72,155);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content .contentArea .rule ul dd{
+    font: 400 1.8em 'Noto Sans KR', sans-serif;
+    color: #666;
+    margin-top: 20px;
+}

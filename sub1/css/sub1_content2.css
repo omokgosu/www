@@ -1,0 +1,66 @@
+#content .contentArea{
+    overflow : hidden;
+    margin: 100px 0 200px 0;
+    padding-top: 100px;
+    border-top: solid 1px #ccc;
+}
+#content .contentArea img{
+    float: left;
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+#content .contentArea img.off.onslide{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .contentArea .welcome{
+    float: right;
+    width: 510px;
+    margin-right: 100px;
+    position: relative;
+    left: 100px;
+    opacity: 0;
+}
+#content .contentArea .welcome.off.onslide{
+    left: 0;
+    opacity: 1;
+    transition: 1s;
+}
+#content .contentArea .welcome p{
+    font: 400 1.8em/2.4em 'Noto Sans KR', sans-serif;
+    color: #666;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+#content .contentArea .welcome p:first-child{
+    position: relative;   
+}
+#content .contentArea .welcome p:first-child::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    bottom: -32px;
+    background-color: rgb(10,72,155);
+}
+#content .contentArea .welcome p:first-child,
+#content .contentArea .welcome p:nth-child(5){
+    margin-bottom: 60px;
+}
+#content .contentArea .welcome p strong{
+    font: 700 28px 'Noto Sans KR', sans-serif;
+    color: rgb(10,72,155);
+}
+#content .contentArea span{
+    display: block;
+    font: 400 1.6em 'Noto Sans KR', sans-serif;
+    text-align: end;
+    color: #666;
+}
+#content .contentArea span strong{
+    font: 500 24px 'Noto Sans KR', sans-serif;
+    margin-left: 10px;
+}

@@ -1,0 +1,76 @@
+.contentArea form{
+    border-top: solid 2px #333;
+    margin: 100px 0;
+}
+.contentArea form dl{
+    display: flex;
+    border-bottom: solid 1px #ccc;
+}
+.contentArea form dl dt{
+    text-align: center;
+    padding: 30px 0;
+    width: 20%;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 2.4em;
+}
+.contentArea form dl dd{
+    width: 70%;
+}
+.contentArea form li:first-child dd{
+    font-size: 2.4em;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.contentArea form li:nth-child(2) input{
+    height: 30px;
+    margin: 20px 0 0 20px;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+}
+.contentArea form li:last-child input{
+    width: auto;
+    margin: 20px 10px 40px 20px;
+}
+.contentArea form li:last-child span{
+    font-size: 1.6em;
+}
+.contentArea form input,
+textarea{
+    width: 100%;
+    outline: none;
+}
+textarea{
+    margin:0 0 20px 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contentArea .write_button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.contentArea .write_button a{
+    margin-right: 15px;
+}
+.contentArea .write_button a,
+.contentArea .write_button input{
+    width: 70px;
+    line-height: 30px;
+    font-size: 1.6em;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    color: #333;
+    background: transparent;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.contentArea .write_button a:hover,
+.contentArea .write_button input:hover{
+    color: #f8f8f8;
+    background: rgb(10, 72, 155);
+    border: solid 1px rgb(10, 72, 155);
+}

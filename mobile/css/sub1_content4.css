@@ -1,0 +1,80 @@
+/* subNav 영역 */
+.subNav ul li{
+    width: 25%;
+}
+/* 본문 콘텐츠 영역 */
+#content{
+    text-align: center;
+}
+#content h3{
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+}
+#content img{
+    width: 40%;
+    margin: 30px 0;
+}
+#content .symbol{
+    margin: 50px 0;
+    background: url(../images/sub1/grid_back.png);
+    padding: 30px 0;
+}
+#content .symbol p{
+    color: #666;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+#content .grid{
+    background: url(../images/sub1/grid.png) no-repeat center/50%;
+}
+#content .grid p{
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px 30px 5%;
+}
+#content .symbolColor{
+    margin-top: 30px;
+}
+#content .symbolColor ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#content .symbolColor ul li{
+    width: 25%;
+}
+#content .symbolColor ul li img{
+    width: 100%;
+}
+#content .symbolColor p{
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px 5%;
+}
+#content .sig{
+    text-align: start;
+    margin: 50px 0;
+}
+#content .sig h3{
+    padding-left: 5%;
+}
+#content .sig p{
+    color: #666;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0 5%;
+    margin: 20px 0;
+}
+#content .sig ul{
+    padding: 0 5%;
+}
+#content .sig ul li{
+    border: solid 1px #ccc;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#content .sig ul li:first-child img:last-child{
+    width: 20%;
+}

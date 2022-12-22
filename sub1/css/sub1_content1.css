@@ -1,0 +1,142 @@
+/* 서브 첫페이지 회사소개 본문콘텐츠 영역 */
+#content{
+    width: 1920px;
+    box-sizing: border-box;
+    padding: 0 360px;
+}
+#content .contentArea dd{
+    font: 400 2.4em 'Roboto', sans-serif;
+    color: #999;
+}
+#content{
+    background: url(../images/content1/content-background_03.jpg) no-repeat center 250px;
+}
+#content .management{
+    margin-top: 100px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#content .management.off.onslide{
+    top: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .management::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .management li{
+    height: 400px;
+    width: 370px;
+    text-align: center;
+    padding-top: 230px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 45px;
+}
+#content .management li:nth-of-type(1){
+    background: url(../images/content1/management_1.jpg) no-repeat top center;
+}
+#content .management li:nth-of-type(2){
+    margin-top: 60px;
+    background: url(../images/content1/management_2.jpg) no-repeat top center;
+}
+#content .management li:last-child{
+    background: url(../images/content1/management_3.jpg) no-repeat top center;
+    margin-right: 0;
+}
+#content .management li dt{
+    font: 700 3em 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+    color: rgb(10, 72, 155);
+}
+#content .management li h3{
+    font: 700 3em 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+}
+#content .mind{
+    margin-top: 100px;
+}
+#content .mind li{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+#content .mind dl{
+    width: 550px;
+    padding-top: 55px;
+}
+#content .mind dt{
+    position: relative;
+    color: rgb(10,72,155);
+    font: 700 4em 'Noto Sans KR', sans-serif;
+    margin-bottom: 50px;
+}
+#content .mind li:first-child img{
+    float: left;
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+#content .mind li.off.onslide:first-child img{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .mind li:first-child dl{
+    float: right;
+    position: relative;
+    left: 100px;
+    opacity: 0;
+}
+#content .mind li.off.onslide:first-child dl{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .mind li:first-child dt::before{
+    content: '사랑받는 기업';
+    position:  absolute;
+    right: 0;
+    top: 28px;
+    font: 500 18px 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+#content .mind li:last-child img{
+    float: right;
+    position: relative;
+    left: 100px;
+    opacity: 0;
+}
+#content .mind li.off.onslide:last-child img{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .mind li:last-child dl{
+    float: left;
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+#content .mind li.off.onslide:last-child dl{
+    left: 0;
+    opacity: 1;
+    transition: all 1s;
+}
+#content .mind li:last-child dt::before{
+    content: '사랑주는 기업';
+    position:  absolute;
+    right: 0;
+    top: 28px;
+    font: 500 18px 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+#content .mind dl dd{
+    font: 400 1.8em 'Noto Sans KR', sans-serif;
+    line-height: 1.7em;
+    text-align: justify;
+    color: #666;
+}
+
