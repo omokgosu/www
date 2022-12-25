@@ -1,0 +1,57 @@
+<? 
+	session_start(); 
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>삼천리 - 고객센터</title>
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./common/css/sub_common.css">
+<link rel="stylesheet" href="./css/sub4_content1.css">
+<link rel="stylesheet" href="./common/css/sub4_common.css">
+<script src="https://kit.fontawesome.com/39dad5f800.js" crossorigin="anonymous"></script>
+<script src="./common/js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+</head>
+
+<body>
+    <div id="wrap">
+    <header id="headerArea">
+        <? include "./common/header.html" ?>
+    </header>
+    <div class="main">
+        <h3>고객센터</h3>
+    </div>
+    <div class="subNav">
+        <ul>
+            <li class="current"><a href="./sub4_1.html" class="current">뉴스</a></li>
+            <li><a href="./sub4_2.html">FAQ</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">뉴스</h2>
+        
+    </article>
+    <footer id="footerArea"></footer>
+  </div>
+ 
+ <script src="./common/js/jquery-1.12.4.min.js"></script>
+ <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./common/js/common.js"></script>
+</body>
+</html>
