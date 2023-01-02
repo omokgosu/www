@@ -21,6 +21,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+body{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 18px;
+}
 ol, ul {
 	list-style: none;
 }
@@ -28,6 +32,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.hidden{
+    position: absolute;
+    left:-9999px;
+    top: -9999px;
+    color: #fff;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+section{
+    height: inherit;
+    position: relative;
+    width: 1920px;
+}
+/* font */
+/* font-family: 'Fredericka the Great', cursive;
+font-family: 'Press Start 2P', cursive; */
 /* css */
 .main{
     position: fixed;
@@ -44,9 +66,19 @@ table {
     width: 500vw;
     height: 100%;
 }
+.maple::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 734px;
+    width: 100%;
+    height: 5px;
+    background: url(./img/bottom.png) repeat-x center center;
+}
+/* 캐릭터 */
 .maple .charctor{
     position: fixed;
-    left: 100px;
+    left: 400px;
     top: 550px;
     width: 107px;
     height: 185px;
@@ -57,6 +89,64 @@ table {
     left: 0;
     top: 0;
     width: 321px;
-    height: 185px;
-    background: url(./img/right-walk.png);
+    height: 370px;
+    background: url(./img/jinsung.png) no-repeat left top;
+}
+/* 첫 섹션 */
+.maple .start h2{
+    position: absolute;
+    font-size: 4em;
+    font-weight: 500;
+    left: 400px;
+    top: 200px;
+}
+.maple .start p{
+    position: absolute;
+    font-size: 3em;
+    font-weight: 400;
+    top: 300px;
+    left: 400px;
+}
+.maple .start span{
+    position: absolute;
+    font-size: 1.6em;
+    font-weight: 400;
+    bottom: 100px;
+    left: 400px;
+}
+.maple .start img{
+    position: absolute;
+    bottom: 224px;
+    left: 600px;
+}
+/* 배경구름 */
+.cloud{
+    width: 200vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cloud img{
+    position: absolute;
+}
+.cloud img:nth-child(1){
+    left: 3%;;
+    top: 20%;
+}
+.cloud img:nth-child(2){
+    left: 25%;
+    top: 10%;
+}
+.cloud img:nth-child(3){
+    left: 45%;
+    top: 30%;
+}
+.cloud img:nth-child(4){
+    left: 75%;
+    top: 25%;
+}
+.cloud img:nth-child(5){
+    left: 100%;
+    top: 18%;
 }
