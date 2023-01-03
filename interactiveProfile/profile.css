@@ -32,6 +32,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img{
+    border: 0;
+    vertical-align: top;
+}
 .hidden{
     position: absolute;
     left:-9999px;
@@ -44,8 +48,21 @@ table {
 }
 section{
     height: inherit;
-    position: relative;
+    position: absolute;
     width: 1920px;
+}
+.gate{
+    position: absolute;
+    bottom: 222px;
+    width: 254px;
+    height: 182px;
+    background: url(./img/gate.png) no-repeat center/cover;
+}
+.gate h2{
+    font-size: 3em;
+    letter-spacing: .2em;
+    text-align: center;
+    margin-top: 45px;
 }
 /* font */
 /* font-family: 'Fredericka the Great', cursive;
@@ -56,7 +73,7 @@ font-family: 'Press Start 2P', cursive; */
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 .maple{
@@ -80,17 +97,17 @@ font-family: 'Press Start 2P', cursive; */
     position: fixed;
     left: 400px;
     top: 550px;
-    width: 107px;
-    height: 185px;
+    width: 126px;
+    height: 183px;
     overflow: hidden;
 }
 .maple .charctor .jinsung{
     position: absolute;
     left: 0;
     top: 0;
-    width: 321px;
-    height: 370px;
-    background: url(./img/jinsung.png) no-repeat left top;
+    width: 378px;
+    height: 366px;
+    background: url(./img/jinsung_20.png) no-repeat left top;
 }
 /* 첫 섹션 */
 .maple .start h2{
@@ -119,15 +136,78 @@ font-family: 'Press Start 2P', cursive; */
     bottom: 224px;
     left: 600px;
 }
-/* 배경구름 */
-.cloud{
+.maple .start .explo{
+    position: absolute;
+    left: 0;
+    bottom: 220px;
+    width: 195px;
+    height: 107px;
+    background: url(./img/explo.png) no-repeat center/cover;
+}
+/* about */
+.about{
+    top: 0;
+    left: 1920px;
+}
+.about ul{
+    position: absolute;
+    display: flex;
+    bottom: 220px;
+    left: 500px;
+}
+.about ul li{
+    position: relative;
+    width: 258px;
+    display: flex;
+    align-items: end;
+}
+.about ul li img{
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    transition: all .5s;
+}
+.about ul li img.on{
+    transform: rotateX(0);
+}
+.about ul li:nth-child(3) img,
+.about ul li:nth-child(4) img{
+    width: 85%;
+    transition-delay: .5s;
+}
+.about ul li:nth-child(5) img,
+.about ul li:nth-child(6) img{
+    width: 70%;
+    transition-delay: 1s;
+}
+.about ul li p{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 150px;
+    height: 110px;
+    background: url(./img/gate.png) no-repeat center/cover;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+/* portpolio */
+.portpolio{
+    top: 0;
+    left: 4200px;
+}
+/* 배경 */
+.cloud,
+.mountain,
+.bird{
     width: 200vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-.cloud img{
+.cloud img, .mountain img{
     position: absolute;
 }
 .cloud img:nth-child(1){
@@ -149,4 +229,24 @@ font-family: 'Press Start 2P', cursive; */
 .cloud img:nth-child(5){
     left: 100%;
     top: 18%;
+}
+.mountain img{
+    bottom: 225px;
+}
+.mountain img:nth-child(1){
+    left: 33%;
+}
+.mountain img:nth-child(2){
+    left: 100%;
+}
+.bird img{
+    position: absolute;
+}
+.bird img:nth-child(1){
+    top: 25%;
+    left: 190%;
+}
+.bird img:nth-child(2){
+    top: 35%;
+    left: 200%;
 }
