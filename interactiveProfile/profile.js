@@ -39,5 +39,4 @@ window.onload = function(){
             var charctor = setInterval(back,200);
         }
     })
-    
 }
