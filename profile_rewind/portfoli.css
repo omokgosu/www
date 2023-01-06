@@ -59,7 +59,12 @@ font-family: 'Roboto', sans-serif;
 
 /* 헤더 영역 */
 #headerArea{
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
     background: #fff;
+    z-index: 1000;
 }
 .headerInner{
     max-width: 1200px;
@@ -92,21 +97,118 @@ font-family: 'Roboto', sans-serif;
 .headerInner .headBtn button span:last-child{
     margin-bottom: 0;
 }
+/* 푸터 영역 */
+#footerArea{
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 /* 메인 비쥬얼 영역 */
 .main{
     position: relative;
-    max-width: 1600px;
-    padding: 30px 0;
-    margin: 0 auto;
+    max-width: 1500px;
+    padding: 100px 0;
+    margin: 80px auto 0;
     text-align: center;
 }
 .main p{
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 8em;
     color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    letter-spacing: 40px;
+    transition: all 1s;
 }
-.main img{
-    width: 60%;
-    object-fit: contain;
+.main p.load{
+    opacity: 1;
+    letter-spacing: 0;
+}
+.main .back{
+    max-width: 1500px;
+    height: 600px;
+    background: url(./img/main_back.png);
+}
+/* intro 영역 */
+#intro{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#intro .intro-2{
+    width: 35%;
+}
+#intro .intro-2 img{
+    width: 100%;
+}
+#intro .intro-1{
+    width: 55%;
+}
+#intro .intro-1 h2{
+    font-size: 1.6em;
+}
+#intro .intro-1 p{
+    font-size: 1.125em;
+    color: #666;
+    margin-top: 30px;
+}
+#intro .intro-1 .resume{
+    text-align: end;
+    margin-top: 40px;
+}
+#intro .intro-1 a{
+    font-weight: 700;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: end;
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+    transition: all .5s;
+}
+#intro .intro-1 a:hover{
+    background: #333;
+    color: #f8f8f8;
+}
+/* slide 영역 */
+@keyframes slide {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-3931px);
+    }
+}
+.slide{
+    overflow: hidden;
+    font-size: 0;
+}
+.slide ul{
+    white-space: nowrap;
+    will-change: transform;
+    animation: slide 10s linear infinite;
+}
+.slide ul li{
+    background-color: black;
+    display: inline-block;
+}
+.slide ul li p{
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #fff;
+    padding: 6px 40px;
 }
