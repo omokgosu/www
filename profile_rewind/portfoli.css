@@ -24,6 +24,9 @@ img{border: 0; vertical-align: top}
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
  */
+ html{
+    font-size: 18px;
+ }
  body{
     font-family: 'Noto Sans KR', sans-serif;
  }
@@ -137,13 +140,14 @@ font-family: 'Roboto', sans-serif;
 }
 .main .back{
     max-width: 1500px;
-    height: 600px;
+    padding: 20% 0;
     background: url(./img/main_back.png);
 }
 /* intro 영역 */
 #intro{
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 100px 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -193,13 +197,14 @@ font-family: 'Roboto', sans-serif;
     }
 }
 .slide{
+    margin: 100px 0;
     overflow: hidden;
     font-size: 0;
 }
 .slide ul{
     white-space: nowrap;
     will-change: transform;
-    animation: slide 10s linear infinite;
+    animation: slide 15s linear infinite;
 }
 .slide ul li{
     background-color: black;
@@ -211,4 +216,45 @@ font-family: 'Roboto', sans-serif;
     letter-spacing: 5px;
     color: #fff;
     padding: 6px 40px;
+}
+/* skill 영역 */
+.skill{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.skill h2{
+    width: 35%;
+    margin-right: 5%;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    text-align: end;
+}
+.skill ul{
+    width: 55%;
+    padding-left: 5%;
+    border-left: solid 1px #333;
+}
+.skill li{
+    position: relative;
+    padding-left: 1.8em;
+    margin-bottom: 1.6em;
+}
+.skill ul li::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(./img/check.png) no-repeat center/cover;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.skill ul h3{
+    font-size: 1.2em;
+    margin-bottom: 0.6rem;
+}
+.skill ul p{
+    color: #666;
 }
